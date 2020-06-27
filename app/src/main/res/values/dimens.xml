@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_elevation">1dp</dimen>
+    <dimen name="card_corner_radius">14dp</dimen>
+    <dimen name="card_margin">14dp</dimen>
+    <dimen name="card_image_width">120dp</dimen>
+    <dimen name="card_image_height">100dp</dimen>
+    <dimen name="card_camera_content_margin">10dp</dimen>
+    <dimen name="text_vertical_space">8dp</dimen>
+    <dimen name="map_list_bottom_offset">26dp</dimen>
+    <dimen name="map_list_padding">16dp</dimen>
+    <dimen name="retry_button_padding">30dp</dimen>
+    <dimen name="retry_button_radius">30dp</dimen>
+    <dimen name="retry_button_height">40dp</dimen>
+    <dimen name="spinning_bar_width">4dp</dimen>
+    <dimen name="close_button_margin">20dp</dimen>
+    <dimen name="close_button_dimensions">40dp</dimen>
+</resources>

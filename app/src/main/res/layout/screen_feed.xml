@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        style="@style/Git_Button"
+        android:id="@+id/retryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/retry_button_height"
+        android:layout_marginTop="@dimen/card_margin"
+        android:background="@drawable/rounded_button_primary"
+        android:paddingRight="@dimen/retry_button_padding"
+        android:paddingLeft="@dimen/retry_button_padding"
+        android:text="@string/refresh"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:initialCornerAngle="@dimen/retry_button_radius"
+        app:finalCornerAngle="@dimen/retry_button_radius"
+        app:spinning_bar_color="@color/colorPrimary"
+        app:spinning_bar_width="@dimen/spinning_bar_width" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/map_list_bottom_offset"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/map_list_padding"
+        android:paddingEnd="@dimen/map_list_padding"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/card_view_camera_details" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
